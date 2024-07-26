@@ -1,0 +1,28 @@
+{
+  "name": "fe2-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rbxtsc",
+    "watch": "rbxtsc -w",
+    "rojo": "mkdirp dist && rojo build -o dist/main.rbxm",
+    "bundle:dev": "pnpm run rojo && cross-env ENV=development remodel run ci/bundle.lua",
+    "bundle:prod": "pnpm run rojo && cross-env ENV=production remodel run ci/bundle.lua",
+    "bundle": "pnpm run bundle:dev && pnpm run bundle:prod"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rbxts/compiler-types": "2.3.0-types.1",
+    "@rbxts/types": "^1.0.791",
+    "roblox-ts": "^2.3.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@rbxts/services": "^1.5.4",
+    "cross-env": "^7.0.3",
+    "mkdirp": "^3.0.1"
+  }
+}

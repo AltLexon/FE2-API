@@ -1,0 +1,7 @@
+/node_modules
+/out
+/include
+/dist
+/roblox-ts-model.rbxm
+
+*.tsbuildinfo
