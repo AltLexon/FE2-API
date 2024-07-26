@@ -2,5 +2,6 @@
 /out
 /include
 /dist
+/ci
 
 *.tsbuildinfo
