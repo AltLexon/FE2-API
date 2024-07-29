@@ -10,7 +10,7 @@ const PlayerScripts = LocalPlayer.FindFirstChildOfClass("PlayerScripts");
 const CL_MAIN_GameScript = PlayerScripts?.WaitForChild("CL_MAIN_GameScript") as LocalScript;
 
 const Alert = CL_MAIN_GameScript.WaitForChild("Alert") as BindableEvent;
-const Notify = CL_MAIN_GameScript.WaitForChild("Alert") as BindableEvent;
+const Notify = CL_MAIN_GameScript.WaitForChild("Notify") as BindableEvent;
 
 export function newAlert(text: string, color3?: Color3, seconds?: number) {
     Alert.Fire(text, color3, seconds);
